@@ -1,0 +1,101 @@
+/* .App {
+  text-align: left;
+} */
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+} */
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+/* .App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+body{
+  margin: 0;
+  padding: 0;
+}
+*{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+}
+.sidebar_css{
+  display:flex;
+
+}
+main{
+  width:100%; 
+  padding:20px;
+}
+.sidebar{
+  background: #000;
+  color:aliceblue;
+  height:120vh;
+  width: 280px;
+  transition: all 0.5s;
+   position: fixed;
+}
+.top_section{
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+}
+.logo{
+  font-size: 25px;
+  /* padding-right: 10px; */
+
+}
+.bars{
+  font-size: 24px;
+  display: flex;
+  margin-left: 50px;
+}
+.mylink{
+  display: flex;
+  color: #fff;
+  padding: 10px 15px;
+  gap:15px;
+  transition: all 0.5s;
+}
+.mylink:hover{
+  background: lightskyblue;
+  color: #000 ;
+  transform: all 0.5s;
+}
+.myactive{
+  background: lightskyblue;
+  color: #000;
+}
+.myicon,.link_text{
+  font-size: 20px;
+}
+.router_css{
+   text-align: center;
+   
+}

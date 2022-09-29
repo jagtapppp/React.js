@@ -12,7 +12,7 @@ function App() {
       <Header/>
       <div className='container container_div'>
       <Routes>
-                <Route path='/' exact  element={< Home />}></Route>
+                <Route exact  path='/'  element={< Home />}></Route>
                 <Route exact path='/movie/:imdbID' element={< MovieDetails />}></ Route>
                 <Route exact path='/*' element={< PageNotFound />}></ Route>
       </Routes>

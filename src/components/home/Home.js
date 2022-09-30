@@ -7,7 +7,7 @@ import { addMovies } from '../../features/movies/movieSlice';
 
 const Home = () => { 
   const movieText= "Harry";  
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
 
    useEffect(()=>{
@@ -25,7 +25,7 @@ const Home = () => {
   
   return (
     <>
-    <div className='banner-img'></div>
+    <div className='banner-img'>Home</div>
     <MovieListing />
     </>
   );

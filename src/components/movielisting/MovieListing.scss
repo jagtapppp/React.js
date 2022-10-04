@@ -1,7 +1,7 @@
  @import "../../common/colors.scss";
 
 
- .movie-list{
+ .movie-list,.show-list{
     margin:  20px 0px;
      h2{
         color: $font-secondary;
@@ -14,8 +14,12 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px,1fr )) !important;
     grid-gap:15px;
+    display: flex;
+    justify-content: space-evenly !important;
  }
 
- .movies_data{
-   color:red;
+ .shows_data{
+   color: pink !important;
+   opacity: 1;
+   // background: rgba(76, 175, 80, 1);
  }

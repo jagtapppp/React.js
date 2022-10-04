@@ -2,6 +2,8 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { getAllMovies , getAllShows} from '../../features/movies/movieSlice'
 import MovieCard from '../moviecard/movieCard';
+import './MovieListing.scss';
+
 // import "./MovieListing.scss";
 
 const MovieListing = () => {
@@ -34,14 +36,13 @@ const MovieListing = () => {
     // <div>MovieListing</div>
     <>
     <div className='movie-wrapper'>
-
       <div className="movie-list">
         <h2 className='movies_data'>Movies</h2>
         <div className='movie-container'>{renderMovies}</div>
       </div>
 
       <div className="show-list">
-        <h2 className='movies_data'>Shows</h2>
+        <h2 className='shows_data'>Shows</h2>
         <div className='movie-container'>{renderShows}</div>
       </div>
 

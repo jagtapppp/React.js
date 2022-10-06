@@ -8,8 +8,7 @@ const MovieCard = (props) => {
   const {data} = props;   
   return (
     <div className='card-item'>
-    
-      <NavLink to ={`/movie/${data.imdbID}`}>
+     <NavLink to ={`/movie/${data.imdbID}`}>
       <div className='card-inner'>
         <div className='card-top'>
           <img src="/harry.jfif" alt={data.Title} />

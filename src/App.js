@@ -20,6 +20,10 @@ function App() {
              <Route path="/product" element={<ProtectedRoutes />}>
             <Route exact path='/product' element={< Product />}></ Route>
              </Route>
+
+             <Route path="/home" element={<ProtectedRoutes />}>
+             <Route exact path='/home' element={< Home />}></Route>
+             </Route>
             <Route exact path='/contact' element={< Contact />}></ Route>
             <Route exact path='/registration' element={< Registration />}></ Route>
             </Routes>

@@ -1,9 +1,15 @@
-import React from "react";
+import React,{useState} from "react";
 import {NavLink, useNavigate} from 'react-router-dom';
 import { Navigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+import Product from '../pages/Product';
 
 
 const Navbar=()=>{
+  const [show, setShow] = useState(false);
+
+  const { carts } = useSelector((state) => state.products);
+
   const navigate= useNavigate();
   const handleLogout = ()=>{
     localStorage.removeItem("loggedin");
@@ -34,7 +40,8 @@ const Navbar=()=>{
          </ul>
      </div>
      <NavLink onClick={handleLogout} className="btn btn-primary btn-outline-light" exact to="">Logout</NavLink>
-    <button className="btn btn-primary my-2 my-sm-0 mx-3" type="submit">cart:0</button>
+     {/* <button className="btn btn-primary my-2 my-sm-0 mx-3 cart1" type="submit">cart:{carts.length}</button> */}
+     
       </div>
 </nav> 
 )

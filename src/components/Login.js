@@ -14,7 +14,7 @@ const Login = () => {
         if(input.email === loggeduser.email && input.password === loggeduser.password)
         {
           localStorage.setItem("loggedin", true)
-            navigate("/product");
+            navigate("/home");
         }
         else{
             alert("wrong email or password");
